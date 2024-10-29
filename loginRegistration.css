@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.full-page {
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url('logreg.jpg') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-page {
+    width: 420px;
+    height: 450px;
+    background: rgba(237, 227, 227, 0.6);
+    /* padding: 10px; */
+    overflow: hidden;
+    border-radius: 10px;
+    position: relative;
+}
+
+.button-box {
+    width: 220px;
+    margin: 35px auto;
+    position: relative;
+    box-shadow: 0 0 20px 9px #ff61241f;
+    border-radius: 30px;
+    display: flex;
+    justify-content: space-between;
+    z-index: 1;
+}
+
+.toggle-btn {
+    padding: 10px 30px;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    outline: none;
+    color: black;
+    transition: 0.3s;
+}
+
+.toggle-btn:hover,
+.toggle-btn.active {
+    color: #48310545;
+}
+
+#btn {
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 110px;
+    height: 100%;
+    background: #261a0332;
+    border-radius: 30px;
+    transition: left 0.5s ease-in-out;
+}
+
+.input-group-login,
+.input-group-register {
+    position: absolute;
+    width: 280px;
+    transition: left 0.5s ease-in-out;
+    padding-left: 45px;
+}
+
+.input-group-login {
+    top: 100px;
+    left: 50px ;
+    padding-left: 45px;
+    
+}
+
+.input-group-register {
+    top: 100px;
+   
+    padding-left: 50px;
+}
+
+.input-field {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: none;
+    border-bottom: 2px solid #332e2e; 
+    outline: none;
+    background: transparent;
+    color: black; 
+}
+
+
+.submit-btn {
+    width: 85%;
+    padding: 10px 40px;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    background: #48310545;
+    border: 0;
+    border-radius: 30px;
+    color: black;
+}
+
+.check-box {
+    margin: 10px 10px 34px 0;
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    color: #fff; 
+}
+
+
+.check-box input[type="checkbox"] {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+
+.check-box input[type="checkbox"] + span {
+    position: relative;
+    padding-left: 25px;
+    line-height: 20px;
+    cursor: pointer;
+}
+
+.check-box input[type="checkbox"] + span:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 20px;
+    width: 20px;
+    background: #ccc; 
+    border-radius: 3px;
+    border: 1px solid #999;
+}
+
+
+
+span {
+    color: #383636;
+    font-size: 12px;
+    position: relative;
+    
+}

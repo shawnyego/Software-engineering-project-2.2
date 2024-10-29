@@ -24,8 +24,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
         loginBtn.addEventListener('click', login);
         registerBtn.addEventListener('click', register);
-
-        // Initialize active state
+        
         loginBtn.classList.add('active');
     } else {
         console.error('One or more elements were not found');
